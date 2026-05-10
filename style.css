@@ -1,0 +1,34 @@
+body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+main { display: flex; gap: 20px; padding: 20px; width: 90%; }
+
+#product-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 15px; 
+    flex: 3; 
+}
+
+.card { 
+    border-radius: 8px; 
+    text-align: center; 
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+.card img { max-width: 100%; border-radius: 4px; }
+
+.highlight { 
+    border: 2px solid #ffcc00 !important; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    background-color: #fffde7;
+}
+
+#product-details { 
+    flex: 1; 
+    border: 1px solid #333; 
+    padding: 20px; 
+    border-radius: 8px; 
+    height: fit-content;
+}
+
+.controls { margin-bottom: 20px; }
